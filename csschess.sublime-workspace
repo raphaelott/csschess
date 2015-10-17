@@ -1,0 +1,194 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Raphael/Documents/GitHub/csschess/chess.html",
+		"/C/Users/Raphael/Documents/GitHub/csschess/styles/chess.scss",
+		"/C/Users/Raphael/Documents/Projects/CSS CHESS/chess.html",
+		"/C/Users/Raphael/Documents/Projects/CSS CHESS/chess.scss",
+		"/C/Users/Raphael/Documents/Projects/CSS CHESS/figures.scss",
+		"/C/Users/Raphael/Documents/Projects/CSS CHESS/figures.css",
+		"/C/Users/Raphael/Documents/Projects/CSS CHESS/chess.css",
+		"/C/Users/Raphael/Documents/Projects/CSS CHESS/figures.xml",
+		"/C/Users/Raphael/Documents/Projects/CSS CHESS/figures.scss.css",
+		"/C/Users/Raphael/Documents/Projects/CSS CHESS/chesstests.css",
+		"/C/Users/Raphael/Documents/Projects/CSS CHESS/chesstests.scss",
+		"/C/Users/Raphael/Documents/Projects/CSS CHESS/figures/kdt.svg",
+		"/C/Users/Raphael/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"#FFFFFF",
+			"#000000",
+			"\"",
+			"> ",
+			"  ",
+			"   ",
+			"\\n",
+			"\"",
+			" <",
+			"\\n",
+			" <",
+			"> ",
+			"\"",
+			"\\s",
+			"#0000FF",
+			"#",
+			"#000000",
+			"#ffffff",
+			"#FFFFFF",
+			"#000000",
+			"\"",
+			"\\n",
+			"\\s"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\"+$white+\"",
+			"\"+$black+\"",
+			"'",
+			">",
+			" ",
+			"'",
+			"<",
+			" ",
+			"<",
+			">",
+			"'",
+			" ",
+			"\"+$shadow+\"",
+			"\"+$dark+\"",
+			"\"+$bright+\"",
+			"#889096",
+			"#D3D7DA",
+			"#394853",
+			"#2C3338",
+			"#FF0000",
+			"'",
+			" ",
+			".",
+			" ",
+			"\\s",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 268.0,
+	"status_bar_visible": true
+}
