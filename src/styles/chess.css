@@ -11,72 +11,514 @@ html {
   height: 100%; }
 
 body {
-  display: table;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   background-color: #383B3C; }
 
-.container {
-  display: table-cell;
-  width: 100%;
-  height: 100%;
-  vertical-align: middle; }
+.board {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vm;
+  height: 100vm;
+  width: 100vmin;
+  height: 100vmin;
+  margin: auto;
+  background: #1B1D1F; }
 
-.chessboard {
-  width: 480px;
-  height: 480px;
-  margin: 0px auto; }
+/* ****************************************************************************************** */
+/* ************************************** COORDINATES *************************************** */
+/* ****************************************************************************************** */
+.a-1 {
+  left: 0vmin;
+  top: 87.5vmin;
+  /* IE 9 */
+  left: 0vm;
+  top: 87.5vm; }
 
-.field {
-  width: 60px;
-  height: 60px;
+.a-2 {
+  left: 0vmin;
+  top: 75vmin;
+  /* IE 9 */
+  left: 0vm;
+  top: 75vm; }
+
+.a-3 {
+  left: 0vmin;
+  top: 62.5vmin;
+  /* IE 9 */
+  left: 0vm;
+  top: 62.5vm; }
+
+.a-4 {
+  left: 0vmin;
+  top: 50vmin;
+  /* IE 9 */
+  left: 0vm;
+  top: 50vm; }
+
+.a-5 {
+  left: 0vmin;
+  top: 37.5vmin;
+  /* IE 9 */
+  left: 0vm;
+  top: 37.5vm; }
+
+.a-6 {
+  left: 0vmin;
+  top: 25vmin;
+  /* IE 9 */
+  left: 0vm;
+  top: 25vm; }
+
+.a-7 {
+  left: 0vmin;
+  top: 12.5vmin;
+  /* IE 9 */
+  left: 0vm;
+  top: 12.5vm; }
+
+.a-8 {
+  left: 0vmin;
+  top: 0vmin;
+  /* IE 9 */
+  left: 0vm;
+  top: 0vm; }
+
+.b-1 {
+  left: 12.5vmin;
+  top: 87.5vmin;
+  /* IE 9 */
+  left: 12.5vm;
+  top: 87.5vm; }
+
+.b-2 {
+  left: 12.5vmin;
+  top: 75vmin;
+  /* IE 9 */
+  left: 12.5vm;
+  top: 75vm; }
+
+.b-3 {
+  left: 12.5vmin;
+  top: 62.5vmin;
+  /* IE 9 */
+  left: 12.5vm;
+  top: 62.5vm; }
+
+.b-4 {
+  left: 12.5vmin;
+  top: 50vmin;
+  /* IE 9 */
+  left: 12.5vm;
+  top: 50vm; }
+
+.b-5 {
+  left: 12.5vmin;
+  top: 37.5vmin;
+  /* IE 9 */
+  left: 12.5vm;
+  top: 37.5vm; }
+
+.b-6 {
+  left: 12.5vmin;
+  top: 25vmin;
+  /* IE 9 */
+  left: 12.5vm;
+  top: 25vm; }
+
+.b-7 {
+  left: 12.5vmin;
+  top: 12.5vmin;
+  /* IE 9 */
+  left: 12.5vm;
+  top: 12.5vm; }
+
+.b-8 {
+  left: 12.5vmin;
+  top: 0vmin;
+  /* IE 9 */
+  left: 12.5vm;
+  top: 0vm; }
+
+.c-1 {
+  left: 25vmin;
+  top: 87.5vmin;
+  /* IE 9 */
+  left: 25vm;
+  top: 87.5vm; }
+
+.c-2 {
+  left: 25vmin;
+  top: 75vmin;
+  /* IE 9 */
+  left: 25vm;
+  top: 75vm; }
+
+.c-3 {
+  left: 25vmin;
+  top: 62.5vmin;
+  /* IE 9 */
+  left: 25vm;
+  top: 62.5vm; }
+
+.c-4 {
+  left: 25vmin;
+  top: 50vmin;
+  /* IE 9 */
+  left: 25vm;
+  top: 50vm; }
+
+.c-5 {
+  left: 25vmin;
+  top: 37.5vmin;
+  /* IE 9 */
+  left: 25vm;
+  top: 37.5vm; }
+
+.c-6 {
+  left: 25vmin;
+  top: 25vmin;
+  /* IE 9 */
+  left: 25vm;
+  top: 25vm; }
+
+.c-7 {
+  left: 25vmin;
+  top: 12.5vmin;
+  /* IE 9 */
+  left: 25vm;
+  top: 12.5vm; }
+
+.c-8 {
+  left: 25vmin;
+  top: 0vmin;
+  /* IE 9 */
+  left: 25vm;
+  top: 0vm; }
+
+.d-1 {
+  left: 37.5vmin;
+  top: 87.5vmin;
+  /* IE 9 */
+  left: 37.5vm;
+  top: 87.5vm; }
+
+.d-2 {
+  left: 37.5vmin;
+  top: 75vmin;
+  /* IE 9 */
+  left: 37.5vm;
+  top: 75vm; }
+
+.d-3 {
+  left: 37.5vmin;
+  top: 62.5vmin;
+  /* IE 9 */
+  left: 37.5vm;
+  top: 62.5vm; }
+
+.d-4 {
+  left: 37.5vmin;
+  top: 50vmin;
+  /* IE 9 */
+  left: 37.5vm;
+  top: 50vm; }
+
+.d-5 {
+  left: 37.5vmin;
+  top: 37.5vmin;
+  /* IE 9 */
+  left: 37.5vm;
+  top: 37.5vm; }
+
+.d-6 {
+  left: 37.5vmin;
+  top: 25vmin;
+  /* IE 9 */
+  left: 37.5vm;
+  top: 25vm; }
+
+.d-7 {
+  left: 37.5vmin;
+  top: 12.5vmin;
+  /* IE 9 */
+  left: 37.5vm;
+  top: 12.5vm; }
+
+.d-8 {
+  left: 37.5vmin;
+  top: 0vmin;
+  /* IE 9 */
+  left: 37.5vm;
+  top: 0vm; }
+
+.e-1 {
+  left: 50vmin;
+  top: 87.5vmin;
+  /* IE 9 */
+  left: 50vm;
+  top: 87.5vm; }
+
+.e-2 {
+  left: 50vmin;
+  top: 75vmin;
+  /* IE 9 */
+  left: 50vm;
+  top: 75vm; }
+
+.e-3 {
+  left: 50vmin;
+  top: 62.5vmin;
+  /* IE 9 */
+  left: 50vm;
+  top: 62.5vm; }
+
+.e-4 {
+  left: 50vmin;
+  top: 50vmin;
+  /* IE 9 */
+  left: 50vm;
+  top: 50vm; }
+
+.e-5 {
+  left: 50vmin;
+  top: 37.5vmin;
+  /* IE 9 */
+  left: 50vm;
+  top: 37.5vm; }
+
+.e-6 {
+  left: 50vmin;
+  top: 25vmin;
+  /* IE 9 */
+  left: 50vm;
+  top: 25vm; }
+
+.e-7 {
+  left: 50vmin;
+  top: 12.5vmin;
+  /* IE 9 */
+  left: 50vm;
+  top: 12.5vm; }
+
+.e-8 {
+  left: 50vmin;
+  top: 0vmin;
+  /* IE 9 */
+  left: 50vm;
+  top: 0vm; }
+
+.f-1 {
+  left: 62.5vmin;
+  top: 87.5vmin;
+  /* IE 9 */
+  left: 62.5vm;
+  top: 87.5vm; }
+
+.f-2 {
+  left: 62.5vmin;
+  top: 75vmin;
+  /* IE 9 */
+  left: 62.5vm;
+  top: 75vm; }
+
+.f-3 {
+  left: 62.5vmin;
+  top: 62.5vmin;
+  /* IE 9 */
+  left: 62.5vm;
+  top: 62.5vm; }
+
+.f-4 {
+  left: 62.5vmin;
+  top: 50vmin;
+  /* IE 9 */
+  left: 62.5vm;
+  top: 50vm; }
+
+.f-5 {
+  left: 62.5vmin;
+  top: 37.5vmin;
+  /* IE 9 */
+  left: 62.5vm;
+  top: 37.5vm; }
+
+.f-6 {
+  left: 62.5vmin;
+  top: 25vmin;
+  /* IE 9 */
+  left: 62.5vm;
+  top: 25vm; }
+
+.f-7 {
+  left: 62.5vmin;
+  top: 12.5vmin;
+  /* IE 9 */
+  left: 62.5vm;
+  top: 12.5vm; }
+
+.f-8 {
+  left: 62.5vmin;
+  top: 0vmin;
+  /* IE 9 */
+  left: 62.5vm;
+  top: 0vm; }
+
+.g-1 {
+  left: 75vmin;
+  top: 87.5vmin;
+  /* IE 9 */
+  left: 75vm;
+  top: 87.5vm; }
+
+.g-2 {
+  left: 75vmin;
+  top: 75vmin;
+  /* IE 9 */
+  left: 75vm;
+  top: 75vm; }
+
+.g-3 {
+  left: 75vmin;
+  top: 62.5vmin;
+  /* IE 9 */
+  left: 75vm;
+  top: 62.5vm; }
+
+.g-4 {
+  left: 75vmin;
+  top: 50vmin;
+  /* IE 9 */
+  left: 75vm;
+  top: 50vm; }
+
+.g-5 {
+  left: 75vmin;
+  top: 37.5vmin;
+  /* IE 9 */
+  left: 75vm;
+  top: 37.5vm; }
+
+.g-6 {
+  left: 75vmin;
+  top: 25vmin;
+  /* IE 9 */
+  left: 75vm;
+  top: 25vm; }
+
+.g-7 {
+  left: 75vmin;
+  top: 12.5vmin;
+  /* IE 9 */
+  left: 75vm;
+  top: 12.5vm; }
+
+.g-8 {
+  left: 75vmin;
+  top: 0vmin;
+  /* IE 9 */
+  left: 75vm;
+  top: 0vm; }
+
+.h-1 {
+  left: 87.5vmin;
+  top: 87.5vmin;
+  /* IE 9 */
+  left: 87.5vm;
+  top: 87.5vm; }
+
+.h-2 {
+  left: 87.5vmin;
+  top: 75vmin;
+  /* IE 9 */
+  left: 87.5vm;
+  top: 75vm; }
+
+.h-3 {
+  left: 87.5vmin;
+  top: 62.5vmin;
+  /* IE 9 */
+  left: 87.5vm;
+  top: 62.5vm; }
+
+.h-4 {
+  left: 87.5vmin;
+  top: 50vmin;
+  /* IE 9 */
+  left: 87.5vm;
+  top: 50vm; }
+
+.h-5 {
+  left: 87.5vmin;
+  top: 37.5vmin;
+  /* IE 9 */
+  left: 87.5vm;
+  top: 37.5vm; }
+
+.h-6 {
+  left: 87.5vmin;
+  top: 25vmin;
+  /* IE 9 */
+  left: 87.5vm;
+  top: 25vm; }
+
+.h-7 {
+  left: 87.5vmin;
+  top: 12.5vmin;
+  /* IE 9 */
+  left: 87.5vm;
+  top: 12.5vm; }
+
+.h-8 {
+  left: 87.5vmin;
+  top: 0vmin;
+  /* IE 9 */
+  left: 87.5vm;
+  top: 0vm; }
+
+/* ****************************************************************************************** */
+/* **************************************** SQUARES ***************************************** */
+/* ****************************************************************************************** */
+.background-square {
+  width: 12.5vm;
+  height: 12.5vm;
+  width: 12.5vmin;
+  height: 12.5vmin;
   background-color: #1B1D1F;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   float: left; }
 
-.field:nth-child(n+1):nth-child(-n+8):nth-child(odd),
-.field:nth-child(n+9):nth-child(-n+16):nth-child(even),
-.field:nth-child(n+17):nth-child(-n+24):nth-child(odd),
-.field:nth-child(n+25):nth-child(-n+32):nth-child(even),
-.field:nth-child(n+33):nth-child(-n+40):nth-child(odd),
-.field:nth-child(n+41):nth-child(-n+48):nth-child(even),
-.field:nth-child(n+49):nth-child(-n+56):nth-child(odd),
-.field:nth-child(n+57):nth-child(-n+64):nth-child(even) {
+.background-square:nth-child(n+1):nth-child(-n+8):nth-child(odd),
+.background-square:nth-child(n+9):nth-child(-n+16):nth-child(even),
+.background-square:nth-child(n+17):nth-child(-n+24):nth-child(odd),
+.background-square:nth-child(n+25):nth-child(-n+32):nth-child(even),
+.background-square:nth-child(n+33):nth-child(-n+40):nth-child(odd),
+.background-square:nth-child(n+41):nth-child(-n+48):nth-child(even),
+.background-square:nth-child(n+49):nth-child(-n+56):nth-child(odd),
+.background-square:nth-child(n+57):nth-child(-n+64):nth-child(even) {
   background-color: #444C52; }
 
-.field:hover {
-  border: 1px solid #FF0000; }
-
-/* toggle tests */
-.toggle-btn {
+.square {
   position: absolute;
-  margin-left: -9999px;
-  visibility: hidden; }
+  display: none; }
 
-.toggle-btn + label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  user-select: none; }
+.square + .square-label {
+  position: absolute;
+  width: 12.5vm;
+  height: 12.5vm;
+  width: 12.5vmin;
+  height: 12.5vmin;
+  z-index: 0; }
 
-input.figure-toggle + label {
-  width: 60px;
-  height: 60px;
-  background-repeat: no-repeat;
-  background-size: contain; }
-
-input.figure-toggle:checked + label {
-  background-color: #444C52; }
-
-/*
-input.figure-toggle + label {
-	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='45' height='45'><g style='fill:none; fill-opacity:1; fill-rule:evenodd; stroke:"+$black+"; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;'><path d='M 22.5,11.63 L 22.5,6' style='fill:none; stroke:"+$black+"; stroke-linejoin:miter;' id='path6570' /><path d='M 22.5,25 C 22.5,25 27,17.5 25.5,14.5 C 25.5,14.5 24.5,12 22.5,12 C 20.5,12 19.5,14.5 19.5,14.5 C 18,17.5 22.5,25 22.5,25' style='fill:"+$black+";fill-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;' /><path d='M 11.5,37 C 17,40.5 27,40.5 32.5,37 L 32.5,30 C 32.5,30 41.5,25.5 38.5,19.5 C 34.5,13 25,16 22.5,23.5 L 22.5,27 L 22.5,23.5 C 19,16 9.5,13 6.5,19.5 C 3.5,25.5 11.5,29.5 11.5,29.5 L 11.5,37 z ' style='fill:"+$black+"; stroke:"+$black+";' /><path d='M 20,8 L 25,8' style='fill:none; stroke:"+$black+"; stroke-linejoin:miter;' /><path d='M 32,29.5 C 32,29.5 40.5,25.5 38.03,19.85 C 34.15,14 25,18 22.5,24.5 L 22.51,26.6 L 22.5,24.5 C 20,18 9.906,14 6.997,19.85 C 4.5,25.5 11.85,28.85 11.85,28.85' style='fill:none; stroke:"+$white+";' /><path d='M 11.5,30 C 17,27 27,27 32.5,30 M 11.5,33.5 C 17,30.5 27,30.5 32.5,33.5 M 11.5,37 C 17,34 27,34 32.5,37' style='fill:none; stroke:"+$white+";' /></g></svg>");
-}
-*/
+.square:checked + label:after {
+  color: #FFFFFF;
+  content: "TEST"; }
 
 /*# sourceMappingURL=chess.css.map */
